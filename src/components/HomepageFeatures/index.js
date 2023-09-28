@@ -2,61 +2,46 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
-const FeatureList = [
-  {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
-];
-
-function Feature({Svg, title, description}) {
-  return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
-
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+          <div className={clsx('col col--7 col--offset-3')}>
+            <div className="padding-horiz--md">
+              <header className="text--center">
+                <h1>Welcome to "The Reflective Engineer"</h1>
+                <h2>Where Engineering Meets Philosophy</h2>
+              </header>
+              <br/>
+              <section>
+                <h3>Discover the Intersection of Engineering and Philosophy</h3>
+                <p>Are you an engineer seeking to explore the reflective side of your profession? Welcome to a unique platform that bridges the gap between engineering and philosophy, guiding you on a journey of deep introspection and insight.</p>
+              </section>
+
+              <section>
+                <h3>What Awaits You:</h3>
+                <ol>
+                  <li><strong>Laws of Reflection:</strong> Explore the fundamental laws and principles that engineers encounter daily, and learn how reflection can be the key to overcoming challenges.</li>
+                  <li><strong>Philosophical Inquiry:</strong> Engage with the profound teachings of philosophers like Socrates, Plato, and more, and examine how their philosophies intersect with the world of engineering.</li>
+                  <li><strong>Thoughtful Engineering:</strong> Discover how reflective thinking can enhance your problem-solving abilities, decision-making processes, and overall effectiveness as an engineer.</li>
+                  <li><strong>Community and Dialogue:</strong> Join a vibrant community of engineers and philosophers who share your passion for contemplation and enlightenment.</li>
+                </ol>
+              </section>
+
+              <section>
+                <h3>Why The Reflective Engineer?</h3>
+                <p>Our mission is to empower engineers to become not just practitioners but also thoughtful, introspective thinkers. By embracing the principles of reflection and philosophy, we believe engineers can reach new heights of innovation and creativity.</p>
+              </section>
+
+              <section>
+                <h3>Embark on Your Reflective Journey</h3>
+                <p>Ready to embark on a journey of self-discovery and intellectual growth? Join us at The Reflective Engineer and explore the dynamic intersection of engineering and philosophy. Whether you're a seasoned professional or a student just beginning your engineering journey, The
+                  Reflective Engineer has a wealth of insights to offer.</p>
+                <p>Embrace the reflective side of engineering, expand your horizons, and redefine your perspective. Your journey towards enlightenment begins here.</p>
+              </section>
+            </div>
+          </div>
         </div>
       </div>
     </section>
