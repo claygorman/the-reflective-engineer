@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'The Reflective Engineer',
-  tagline: 'Reflections on software engineering',
+  tagline: 'Where Engineering Meets Philosophy',
   favicon: 'img/favicon.ico',
 
   // Recommended for github
