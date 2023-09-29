@@ -1,19 +1,12 @@
 import React from 'react';
-import clsx from 'clsx';
 import styles from './styles.module.css';
 
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
-          <div className={clsx('col col--7 col--offset-3')}>
-            <div className="padding-horiz--md">
-              <header className="text--center">
-                <h1>Welcome to "The Reflective Engineer"</h1>
-                <h2>Where Engineering Meets Philosophy</h2>
-              </header>
-              <br/>
+          <div className="">
+            <div className={styles.mainContent}>
               <section>
                 <h3>Discover the Intersection of Engineering and Philosophy</h3>
                 <p>Are you an engineer seeking to explore the reflective side of your profession? Welcome to a unique platform that bridges the gap between engineering and philosophy, guiding you on a journey of deep introspection and insight.</p>
@@ -42,7 +35,6 @@ export default function HomepageFeatures() {
               </section>
             </div>
           </div>
-        </div>
       </div>
     </section>
   );
